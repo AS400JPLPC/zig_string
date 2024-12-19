@@ -118,8 +118,7 @@ std.debug.print("{s}",.{myString.string()});
 <br>
 global allocator
 
-```
-    var arenaZfld = std.heap.ArenaAllocator.init(std.heap.page_allocator);
+```var arenaZfld = std.heap.ArenaAllocator.init(std.heap.page_allocator);
     var allocZfld = arenaZfld.allocator();
 
 	pub fn deinitZfld() void {
