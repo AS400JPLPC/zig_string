@@ -164,7 +164,7 @@ var nom3 = try nom.clone();
             .{nom3.string(), nom3.len(), nom3.capacity(),  nom3.getnbc(), val});
 
 pause("step-1");
-zfld.ZFIELD.deinitZfld();
+zfld.deinitZfld();
 
 
 var testa = zfld.ZFIELD.init(10) ;
@@ -189,7 +189,7 @@ xx= "coucou";
                 .{nom3.string(), nom3.len(), nom3.capacity(),  nom3.getnbc(), nom3.check()});
 
 
-zfld.ZFIELD.deinitZfld();
+zfld.deinitZfld();
 
 pause("stop");
 

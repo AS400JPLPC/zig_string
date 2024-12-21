@@ -13,8 +13,8 @@ pub fn build(b: *std.Build) void {
     // Building the executable
 
     const Prog = b.addExecutable(.{
-    .name = "Test",
-    .root_source_file = b.path( "./Test.zig" ),
+    .name = "Testzfld",
+    .root_source_file = b.path( "./Testzfld.zig" ),
     .target = target,
     .optimize = optimize,
     });

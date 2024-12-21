@@ -6,6 +6,7 @@
 
 const std = @import("std");
 const zfld = @import("zfield");
+const dcml = @import("decimal");
 
 const stdout = std.io.getStdOut().writer();
 const stdin = std.io.getStdIn().reader();
@@ -17,6 +18,11 @@ pub const contact = struct {
   rue2      : zfld.ZFIELD  ,
   ville     : zfld.ZFIELD  ,
   pays      : zfld.ZFIELD  ,
+  base      : dcml.DCMLFX  ,
+  taxe      : dcml.DCMLFX  ,
+  htx       : dcml.DCMLFX  ,
+  ttc       : dcml.DCMLFX  ,
+  nbritem   : dcml.DCMLFX  ,
   
 
   // defined structure and set ""
@@ -30,7 +36,13 @@ pub const contact = struct {
             .rue2   = zfld.ZFIELD.init(30) ,
             .ville  = zfld.ZFIELD.init(20) ,
             .pays   = zfld.ZFIELD.init(15) ,
+            .base   = dcml.DCMLFX.init(13,2) ,      
+            .taxe   = dcml.DCMLFX.init(1,2)  ,
+            .htx    = dcml.DCMLFX.init(25,2) ,
+            .ttc    = dcml.DCMLFX.init(25,2)  ,
+            .nbritem  = dcml.DCMLFX.init(15,0) ,
         };
+        
         return rcd;      
     }
 
@@ -41,8 +53,13 @@ pub const contact = struct {
         r.rue2.deinit();
         r.ville.deinit();
         r.pays.deinit();
-        
+        r.base.deinit();
+        r.taxe.deinit();
+        r.htx.deinit();
+        r.ttc.deinit();
+        r.nbritem.deinit();
     }
+
 
 };
     
@@ -61,70 +78,28 @@ var friend  = contact.initRecord();
     friend.rue1.setZfld(" 01 rue du sud-ouest") catch unreachable;
     friend.ville.setZfld("Narbonne") catch unreachable;
     friend.pays.setZfld("France") catch unreachable;
+    friend.base.setDcml("10000") catch unreachable;
+    friend.nbritem.setDcml("1") catch unreachable;
+    friend.taxe.setDcml("1.20") catch unreachable;
+    
+    
     pause("setp-1   INIT value"); 
 
     var xx = friend.name.string();
     pause(xx);
-    xx = friend.prenom.string();
+
+
+    friend.ttc.rate(friend.base,friend.nbritem,friend.taxe) catch | err | dcml.dsperr(err);
+
+    xx = friend.ttc.string();
+
+    friend.htx.multTo(friend.base,friend.nbritem) catch | err | dcml.dsperr(err);
+    xx = friend.ttc.string();
     pause(xx);
-    xx = friend.rue1.string();
-    pause(xx);
-    xx = friend.ville.string();
-    pause(xx);
-    xx = friend.pays.string();
-    pause(xx);
-    
-    pause("step-2");
-
-    friend.name.uppercase();
-    xx = friend.name.string();
-    pause(xx);
-
-    friend.name.debugContext();
-
-    friend.name.clear();
-    friend.name.debugContext();
-    pause("step-X");
-    friend.name.setZfld("AS400JPLPC") catch unreachable;
-
-    std.debug.print("{} cmpeql\n",.{friend.name.cmpeql("test")});
-    
-    std.debug.print("{} cmpxx\n",.{friend.name.cmpxx("test")});
-
-    std.debug.print("name check:{}\n",.{friend.name.check()});
-    
-    xx = friend.prenom.getSubstr(1,4) catch | err | { std.debug.print("{}",.{err}) ; return ; };
-    std.debug.print("{s}  getSubstr:{s} \n",.{friend.prenom.string(),xx});
-
-    friend.ville.concat(" 11100") catch | err | { std.debug.print("{}",.{err}); return; };
-
-    std.debug.print("{s} ville  check:{} \n",.{friend.ville.string(), friend.ville.check()});
-    friend.ville.debugContext();
-      
-
-    friend.name.setFull("AS400JPLPC111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111") catch unreachable;
-    friend.prenom.debugContext();
-     _=friend.prenom.replace("Jean",friend.name.string()) catch | err | { std.debug.print("{}",.{err}); return; };
-    pause("replace prenom");
-     std.debug.print("prenom check:{} \n",.{friend.prenom.check()});
-    friend.prenom.debugContext();
-    std.debug.print("{s}  prenom check:{} \n",.{friend.prenom.string(),friend.prenom.check()});
-    //the string normalize function always
-    xx = friend.prenom.string();
-    pause(xx);
-    friend.prenom.setZfld("Jean-Pierre") catch unreachable;
-
-
-
 
     
-    friend.deinitRecord();
-
-    pause("step-3  deinitRecord");
-
     zfld.deinitZfld();
- 
-    // zfld.ZFIELD.arenaZfld.deinit();
+    dcml.deinitDcml();
     pause("stop");
 }
 
@@ -137,3 +112,4 @@ fn pause(text : [] const u8) void {
 	_= stdin.readUntilDelimiterOrEof(buf[0..], '\n') catch unreachable;
 
 }
+
