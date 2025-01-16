@@ -24,7 +24,7 @@ pub const contact = struct {
 
         
         const rcd = contact {
-            .name   = zfld.ZFIELD.init(30) ,      
+            .name   = zfld.ZFIELD.init(30) ,
             .prenom = zfld.ZFIELD.init(20) ,
             .rue1   = zfld.ZFIELD.init(30) ,
             .rue2   = zfld.ZFIELD.init(30) ,

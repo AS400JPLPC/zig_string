@@ -75,8 +75,6 @@ do
 
 	f_dsplyPos  8  20 $faGras$fcRouge' 10'; f_dsplyPos  8  24 $faGras$fcGreen 'Testzfld'
 	f_dsplyPos 10  20 $faGras$fcRouge' 12'; f_dsplyPos 10  24 $faGras$fcGreen 'Testmem'
-	f_dsplyPos 12  20 $faGras$fcRouge' 14'; f_dsplyPos 12  24 $faGras$fcGreen 'Zoned'
-	f_dsplyPos 14  20 $faGras$fcRouge' 16'; f_dsplyPos 14  24 $faGras$fcGreen 'Testdcml'
 
 	f_dsplyPos 16  24 $faGras$fcJaune '----------------------------------------'
 
@@ -86,7 +84,7 @@ do
 
 	f_dsplyPos 21  20 $faGras$fcRouge'50.'; f_dsplyPos 21  24 $faGras$fcCyan  'Edit my library'	
 
-	f_dsplyPos 23  20 $faGras$fcRouge'55.'; f_dsplyPos 23  24 $faGras$fcCyan  'Edit my project'
+	f_dsplyPos 23  20 $faGras$fcRouge'60.'; f_dsplyPos 23  24 $faGras$fcCyan  'Edit my project'
 
 	f_dsplyPos 24  20 $faGras$fcRouge'66.'; f_dsplyPos 24  24 $faGras$fcCyan  'Edit last source used'
 
@@ -121,14 +119,6 @@ do
 		12)
 			/home/soleil/.Terminal/dispatch.sh $envZIG $LIBPROJECT   "Testmem"
 		;;
-#Zoned"
-		14)
-			/home/soleil/.Terminal/dispatch.sh $envZIG $LIBPROJECT   "Zoned"
-		;;
-#Testdcml"
-		16)
-			/home/soleil/.Terminal/dispatch.sh $envZIG $LIBPROJECT   "Testdcml"
-		;;
 #debug
 		33)
 			/home/soleil/.Terminal/debugZig.sh $PROJECT
@@ -147,7 +137,7 @@ do
 		;;
 
 #project
-		55)
+		60)
 			/home/soleil/.Terminal/myProject.sh  $PROJECT $LIBPROJECT"src-zig"
 			#sleep 2
 			#break
