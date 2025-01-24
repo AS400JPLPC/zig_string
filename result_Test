@@ -1,0 +1,1942 @@
+[soleil@DRAGON ~]$ cd ./Ztext
+[soleil@DRAGON Ztext]$ ./Testzfld
+-------------------------------
+
+
+nom.reverse()
+
+
+
+ setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+reverse erreiP naeJ  count:11  capacity:11    nbrc:30
+stop
+
+[soleil@DRAGON Ztext]$ 
+[soleil@DRAGON Ztext]$ 
+[soleil@DRAGON Ztext]$ ./Testzfld
+-------------------------------
+
+
+nom.reverse()
+
+
+
+ setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+reverse Jean Pierre  count:11  capacity:11    nbrc:30
+stop
+
+[soleil@DRAGON Ztext]$ ./Testzfld
+-------------------------------
+
+
+nom.reverse()
+
+
+
+ setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+reverse erreiP naeJ  count:11  capacity:11    nbrc:30
+stop
+
+[soleil@DRAGON Ztext]$ ./Testzfld
+-------------------------------
+
+
+nom.reverse()
+
+
+
+ setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+reverse erreiP naeJ  count:11  capacity:11    nbrc:30
+stop
+
+[soleil@DRAGON Ztext]$ ./Testzfld
+-------------------------------
+
+
+nom.truncat(5)
+
+
+
+ setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+truncat(5) >Jean <  count:5  capacity:5    nbrc:30
+stop
+
+[soleil@DRAGON Ztext]$ ./Testzfld
+-------------------------------
+
+
+nom.truncat(5)
+
+
+
+ setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+truncat(5) >Jean <  count:5  capacity:5    nbrc:30
+-------------------------------
+
+
+nom.uppercase() jean pierre
+
+uppercase >JEAN PIERRE<  count:11  capacity:11    nbrc:30
+
+nom.lowercase()
+
+lowercase >jean pierre<  count:11  capacity:11    nbrc:30
+
+nom.capitalized()
+
+toCapitalized >Jean Pierre<  count:11  capacity:11    nbrc:30
+
+nom.uppercase()  pédalier
+
+uppercase >PÉDALIER<  count:8  capacity:9    nbrc:30
+
+nom.lowercase()
+
+lowercase >pédalier<  count:8  capacity:9    nbrc:30
+
+nom.capitalized()
+
+toCapitalized   Pédalier  count:10  capacity:11    nbrc:30
+stop
+
+[soleil@DRAGON Ztext]$ ./Testzfld
+-------------------------------
+
+
+nom.trim)
+
+
+
+ setZfld nom> jean pierre < count:13  capacity:13    nbrc:30  
+trim >jean pierre<  count:11  capacity:11    nbrc:30
+stop
+
+[soleil@DRAGON Ztext]$ ./Testzfld
+-------------------------------
+
+
+nom.trim)
+
+
+
+ setZfld nom> jean pierre < count:13  capacity:13    nbrc:30  
+trim >jean pierre<  count:11  capacity:11    nbrc:30
+
+nom.trimLeft)
+
+
+
+ setZfld nom> jean pierre < count:13  capacity:13    nbrc:30  
+trimiLeft >jean pierre <  count:12  capacity:12    nbrc:30
+stop
+
+[soleil@DRAGON Ztext]$ ./Testzfld
+-------------------------------
+
+
+nom.trim)
+
+
+
+ setZfld nom> jean pierre < count:13  capacity:13    nbrc:30  
+trim >jean pierre<  count:11  capacity:11    nbrc:30
+
+nom.trimLeft)
+
+
+
+ setZfld nom> jean pierre < count:13  capacity:13    nbrc:30  
+trimLeft >jean pierre <  count:12  capacity:12    nbrc:30
+
+nom.trimRight)
+
+
+
+ setZfld nom> jean pierre < count:13  capacity:13    nbrc:30  
+trimRight > jean pierre<  count:12  capacity:12    nbrc:30
+stop
+
+[soleil@DRAGON Ztext]$ ./Testzfld
+-------------------------------
+
+
+nom.trim)
+
+
+
+ setZfld nom> jean pierre < count:13  capacity:13    nbrc:30  
+trim >jean pierre<  count:11  capacity:11    nbrc:30
+
+nom.trimLeft)
+
+
+
+ setZfld nom> jean pierre < count:13  capacity:13    nbrc:30  
+trimLeft >jean pierre <  count:12  capacity:12    nbrc:30
+
+nom.trimRight)
+
+
+
+ setZfld nom> jean pierre < count:13  capacity:13    nbrc:30  
+trimRight(' ') > jean pierre<  count:12  capacity:12    nbrc:30
+trimRight('r') > jean pierre<  count:12  capacity:12    nbrc:30
+stop
+
+[soleil@DRAGON Ztext]$ ./Testzfld
+-------------------------------
+
+
+nom.trim)
+
+
+
+ setZfld nom> jean pierre < count:13  capacity:13    nbrc:30  
+trim >jean pierre<  count:11  capacity:11    nbrc:30
+
+nom.trimLeft)
+
+
+
+ setZfld nom> jean pierre < count:13  capacity:13    nbrc:30  
+trimLeft >jean pierre <  count:12  capacity:12    nbrc:30
+
+nom.trimRight)
+
+
+
+ setZfld nom> jean pierre < count:13  capacity:13    nbrc:30  
+trimRight(' ') > jean pierre<  count:12  capacity:12    nbrc:30
+trimRight('e') > jean pierr<  count:11  capacity:11    nbrc:30
+stop
+
+[soleil@DRAGON Ztext]$ ./Testzfld
+-------------------------------
+
+
+nom.trim)
+
+
+
+ setZfld nom> jean pierre < count:13  capacity:13    nbrc:30  
+trim >jean pierre<  count:11  capacity:11    nbrc:30
+
+nom.trimLeft)
+
+
+
+ setZfld nom> jean pierre < count:13  capacity:13    nbrc:30  
+trimLeft >jean pierre <  count:12  capacity:12    nbrc:30
+
+nom.trimRight)
+
+
+
+ setZfld nom> jean pierre < count:13  capacity:13    nbrc:30  
+trimRight(' ') > jean pierre<  count:12  capacity:12    nbrc:30
+trimRight('e') > jean pierr<  count:11  capacity:11    nbrc:30
+trimRight('rr') > jean pie<  count:9  capacity:9    nbrc:30
+stop
+
+[soleil@DRAGON Ztext]$ ./Testzfld
+-------------------------------
+
+
+nom.trim())
+
+
+
+ setZfld nom> jean pierre < count:13  capacity:13    nbrc:30  
+trim >jean pierre<  count:11  capacity:11    nbrc:30
+
+nom.trimLeft())
+
+
+
+ setZfld nom> jean pierre < count:13  capacity:13    nbrc:30  
+trimLeft >jean pierre <  count:12  capacity:12    nbrc:30
+trimLeft('Jean') >jean pierre <  count:12  capacity:12    nbrc:30
+
+nom.trimRight())
+
+
+
+ setZfld nom> jean pierre < count:13  capacity:13    nbrc:30  
+trimRight(' ') > jean pierre<  count:12  capacity:12    nbrc:30
+trimRight('e') > jean pierr<  count:11  capacity:11    nbrc:30
+trimRight('rr') > jean pie<  count:9  capacity:9    nbrc:30
+stop
+
+[soleil@DRAGON Ztext]$ ./Testzfld
+-------------------------------
+
+
+nom.trim())
+
+
+
+ setZfld nom> jean pierre < count:13  capacity:13    nbrc:30  
+trim >jean pierre<  count:11  capacity:11    nbrc:30
+
+nom.trimLeft())
+
+
+
+ setZfld nom> jean pierre< count:12  capacity:12    nbrc:30  
+trimLeft >jean pierre<  count:11  capacity:11    nbrc:30
+trimLeft('Jean') >jean pierre<  count:11  capacity:11    nbrc:30
+
+nom.trimRight())
+
+
+
+ setZfld nom>jean pierre < count:12  capacity:12    nbrc:30  
+trimRight(' ') >jean pierre<  count:11  capacity:11    nbrc:30
+trimRight('e') >jean pierr<  count:10  capacity:10    nbrc:30
+trimRight('rr') >jean pie<  count:8  capacity:8    nbrc:30
+stop
+
+[soleil@DRAGON Ztext]$ ./Testzfld
+-------------------------------
+
+
+nom.trim())
+
+
+
+ setZfld nom> jean pierre < count:13  capacity:13    nbrc:30  
+trim >jean pierre<  count:11  capacity:11    nbrc:30
+
+nom.trimLeft())
+
+
+
+ setZfld nom> jean pierre< count:12  capacity:12    nbrc:30  
+trimLeft >jean pierre<  count:11  capacity:11    nbrc:30
+trimLeft('Jean') > pierre<  count:7  capacity:7    nbrc:30
+
+nom.trimRight())
+
+
+
+ setZfld nom> jean pierre < count:13  capacity:13    nbrc:30  
+trimRight(' ') > jean pierre<  count:12  capacity:12    nbrc:30
+trimRight('e') > jean pierr<  count:11  capacity:11    nbrc:30
+trimRight('rr') > jean pie<  count:9  capacity:9    nbrc:30
+stop
+
+[soleil@DRAGON Ztext]$ ./Testzfld
+-------------------------------
+
+cmpeql(coucou,coucou)  true
+cmpxx(coucou,)  EQ
+cmpeql(coucou,coucou)  true
+cmpxx(coucou,coucou)  EQ
+cmpxx(coucou,aaaaaa)  GT
+cmpxx(coucou,yaaaaa)  LT
+chek nom ><  count:0  capacity:0    nbrc:30  
+stop
+
+[soleil@DRAGON Ztext]$ ./Testzfld
+-------------------------------
+
+cmpeql(coucou,coucou)  true
+cmpxx(coucou,)  EQ
+cmpeql(coucou,coucou)  true
+cmpxx(coucou,coucou)  EQ
+cmpxx(coucou,aaaaaa)  GT
+cmpxx(coucou,yaaaaa)  LT
+setZfld nom > jean pierre as400<  count:18  capacity:18    nbrc:30
+checkStr('pierre') nom > jean pierre as400<  count:18  capacity:18    nbrc:30  
+ check:true 
+setZfld nom > jean pierre coucou as400<  count:25  capacity:25    nbrc:30
+check(testa) nom > jean pierre coucou as400<  count:25  capacity:25    nbrc:30  
+  check:true 
+stop
+
+[soleil@DRAGON Ztext]$ ./Testzfld
+bash: ./Testzfld: Aucun fichier ou dossier de ce nom
+[soleil@DRAGON Ztext]$ ./Testzfld
+-------------------------------
+
+cmpeql(coucou,coucou)  true
+cmpxx(coucou,)  EQ
+cmpeql(coucou,coucou)  true
+cmpxx(coucou,coucou)  EQ
+cmpxx(coucou,aaaaaa)  GT
+cmpxx(coucou,yaaaaa)  LT
+setZfld nom > jean pierre as400<  count:18  capacity:18    nbrc:30
+checkStr('pierre') nom > jean pierre as400<  count:18  capacity:18    nbrc:30  
+ check:true 
+setZfld nom > jean pierre coucou as400<  count:25  capacity:25    nbrc:30
+check(testa) nom > jean pierre coucou as400<  count:25  capacity:25    nbrc:30  
+  check:true 
+setZfld nom > jean pierre as400<  count:18  capacity:18    nbrc:30
+checkStr('xx') nom > jean pierre as400<  count:18  capacity:18    nbrc:30  
+ check:false 
+setZfld nom > jean pierre coucou as400<  count:25  capacity:25    nbrc:30
+check(testa = xx) nom > jean pierre coucou as400<  count:25  capacity:25    nbrc:30  
+  check:false 
+stop
+
+[soleil@DRAGON Ztext]$ 
+[soleil@DRAGON Ztext]$ ./Testzfld
+setZfld nom >早上好 test 🔥<  count:10  capacity:19   nbrc:30
+setZfld nom >té€34567890123456789012345678Z<  count:30  capacity:33   nbrc:30
+string nom >té€34567890123456789012345678Z<  count:30  capacity:33    nbrc:30  
+XX:>té€34567890123456789012345678Z<
+clear nom ><  count:0  capacity:0    nbrc:30
+clone nom >t€é123456789012345678901234567<  count:31  capacity:34    nbrc:30
+nom:>t€é123456789012345678901234567<
+setZfld nom3 >abcd<  count:4  capacity:4    nbrc:30
+copy nom >t€é123456789012345678901234567<  count:30  capacity:33    nbrc:30
+nom3:>t€é123456789012345678901234567<
+pop nom3  >t€é12345678901234567890123456<  count:29  capacity:32    nbrc:30
+-------------------------------
+
+
+nom2.substr(nom,12,10)
+
+getsubStr(12,10) nom >t€é123456789012345678901234567< count:10  capacity:10    nbrc:10  
+nom2:>0123456789<
+
+nom2.substr(nom,0,10)
+
+getsubStr(0,10) nom >t€é123456789012345678901234567< count:10  capacity:13    nbrc:10  
+nom2:>t€é1234567<
+nom3.substr(nom2,0,10)
+
+getsubStr(0,10) nom2 >t€é1234567< count:10  capacity:13    nbrc:30  
+nom3:>t€é1234567<
+
+nom3.substr(nom2,9,1)
+
+getsubStr(10,0) nom2 >t€é1234567< count:1  capacity:1    nbrc:30  
+nom3:>7<
+-------------------------------
+
+
+nom3.remove(0,16)
+
+setZfld nom3>0123456789abcdef< count:16  capacity:16    nbrc:30  
+remove(0,16) nom3 >< count:0  capacity:0    nbrc:30  
+
+nom3.remove(10,6)
+
+
+
+setZfld nom3>0123456789abcdef< count:16  capacity:16    nbrc:30  
+remove(10,16) nom3 >0123456789< count:10  capacity:10    nbrc:30  
+
+nom3.remove(0,1)
+
+remove(0,1) nom3 >123456789< count:9  capacity:9    nbrc:30  
+
+nom3.remove(15,1)
+
+
+
+setZfld nom3>0123456789abcdef< count:16  capacity:16    nbrc:30  
+remove(15,1) nom3 >0123456789abcde< count:15  capacity:15    nbrc:30  
+-------------------------------
+
+
+nom.isEmpty()
+
+
+
+setZfld nom3>< count:0  capacity:0    nbrc:30  
+nom.isEmpty() nom >< count:0  capacity:0    nbrc:30 isEmpty:true 
+
+
+setZfld nom3>Jean Pierre< count:11  capacity:11    nbrc:30  
+nom.isEmpty() nom >Jean Pierre< count:11  capacity:11    nbrc:30 isEmpty:false 
+-------------------------------
+
+
+nom.find("n")
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+find('n') >Jean Pierre<  count:11  capacity:11    nbrc:30 find:3
+
+nom.remove(0,rep)
+
+remove(0,3) nom >n Pierre< count:8  capacity:8    nbrc:30  
+
+nom.find("?")
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+find('?') >Jean Pierre<  count:11  capacity:11    nbrc:30 
+ err-find:null
+-------------------------------
+
+
+nom.rfind("P")
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+rfind('P') >Jean Pierre<  count:11  capacity:11    nbrc:30 find:5
+
+nom.remove( rep ,1)
+
+remove(5,1) nom >Jean ierre< count:10  capacity:10    nbrc:30  
+
+nom.rfind("?")
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+rfind('?') >Jean Pierre<  count:11  capacity:11    nbrc:30 
+ err-find:null
+-------------------------------
+
+
+nom.findPos(5,"e")
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+findPos('e',5) >Jean Pierre<  count:11  capacity:11    nbrc:30 find:7
+
+nom.remove( rep ,1)
+
+remove(7,1) nom >Jean Pirre< count:10  capacity:10    nbrc:30  
+
+nom.findPos(5,"?")
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+rfind(5,'?') >Jean Pierre<  count:11  capacity:11    nbrc:30 
+ err-find:null
+-------------------------------
+
+
+nom.concat(nom2)
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+
+
+setZfld nom> Zig< count:4  capacity:4    nbrc:10  
+concat nom + nom2 >Jean Pierre Zig<  count:15  capacity:15    nbrc:30 
+
+nom.concat(nom2)
+
+
+
+clear nom>< count:0  capacity:0    nbrc:30  
+
+
+setZfld nom> Zig< count:4  capacity:4    nbrc:10  
+concat nom + nom2 > Zig<  count:4  capacity:4    nbrc:30 
+
+nom.concat(nom2)
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+
+
+clear nom>< count:0  capacity:0    nbrc:10  
+concat nom + nom2 >Jean Pierre<  count:11  capacity:11    nbrc:30 
+
+nom.concat(nom2)
+
+
+
+clear nom>< count:0  capacity:0    nbrc:30  
+
+
+clear nom>< count:0  capacity:0    nbrc:10  
+concat nom + nom2 ><  count:0  capacity:0    nbrc:30 
+
+nom.concatStr(nom2)
+
+
+
+setZfld nom>Test< count:4  capacity:4    nbrc:30  
+concat nom + 'bonjour' >Test bonjour<  count:12  capacity:12    nbrc:30 
+-------------------------------
+
+
+nom.replace( Pierre , toto)
+
+
+
+ setZfld nom>Jean Pierre AS400< count:17  capacity:17    nbrc:30  
+replace("Pierre", "toto") >Jean toto AS400<  count:15  capacity:15    nbrc:30    relace Ok : true
+
+
+ setZfld nom>Jean Pierre AS400< count:17  capacity:17    nbrc:30  
+replace("Jean", "Informaticien") >Informaticien Pierre AS400<  count:26  capacity:26    nbrc:30    relace Ok : true
+
+
+ setZfld nom>Jean Pierre AS400< count:17  capacity:17    nbrc:30  
+replace("Yttt", "Informaticien") >Jean Pierre AS400<  count:17  capacity:17    nbrc:30    relace Ok : false
+
+
+ setZfld nom>< count:0  capacity:0    nbrc:30  
+replace("Yttt", "Informaticien") ><  count:0  capacity:0    nbrc:30    relace Ok : false
+-------------------------------
+
+
+nom.reverse()
+
+
+
+ setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+reverse>erreiP naeJ<  count:11  capacity:11    nbrc:30
+-------------------------------
+
+
+nom.truncat(5)
+
+
+
+ setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+truncat(5) >Jean <  count:5  capacity:5    nbrc:30
+-------------------------------
+
+
+nom.uppercase() jean pierre
+
+uppercase >JEAN PIERRE<  count:11  capacity:11    nbrc:30
+
+nom.lowercase()
+
+lowercase >jean pierre<  count:11  capacity:11    nbrc:30
+
+nom.capitalized()
+
+toCapitalized >Jean Pierre<  count:11  capacity:11    nbrc:30
+
+nom.uppercase()  pédalier
+
+uppercase >PÉDALIER<  count:8  capacity:9    nbrc:30
+
+nom.lowercase()
+
+lowercase >pédalier<  count:8  capacity:9    nbrc:30
+
+nom.capitalized()
+
+toCapitalized   Pédalier  count:10  capacity:11    nbrc:30
+-------------------------------
+
+
+nom.trim())
+
+
+
+ setZfld nom> jean pierre < count:13  capacity:13    nbrc:30  
+trim >jean pierre<  count:11  capacity:11    nbrc:30
+
+nom.trimLeft())
+
+
+
+ setZfld nom> jean pierre< count:12  capacity:12    nbrc:30  
+trimLeft >jean pierre<  count:11  capacity:11    nbrc:30
+trimLeft('Jean') > pierre<  count:7  capacity:7    nbrc:30
+
+nom.trimRight())
+
+
+
+ setZfld nom> jean pierre < count:13  capacity:13    nbrc:30  
+trimRight(' ') > jean pierre<  count:12  capacity:12    nbrc:30
+trimRight('e') > jean pierr<  count:11  capacity:11    nbrc:30
+trimRight('rr') > jean pie<  count:9  capacity:9    nbrc:30
+-------------------------------
+
+cmpeql(coucou,coucou)  true
+cmpxx(coucou,)  EQ
+cmpeql(coucou,coucou)  true
+cmpxx(coucou,coucou)  EQ
+cmpxx(coucou,aaaaaa)  GT
+cmpxx(coucou,yaaaaa)  LT
+setZfld nom > jean pierre as400<  count:18  capacity:18    nbrc:30
+checkStr('pierre') nom > jean pierre as400<  count:18  capacity:18    nbrc:30  
+ check:true 
+setZfld nom > jean pierre coucou as400<  count:25  capacity:25    nbrc:30
+check(testa) nom > jean pierre coucou as400<  count:25  capacity:25    nbrc:30  
+  check:true 
+setZfld nom > jean pierre as400<  count:18  capacity:18    nbrc:30
+checkStr('xx') nom > jean pierre as400<  count:18  capacity:18    nbrc:30  
+ check:false 
+setZfld nom > jean pierre coucou as400<  count:25  capacity:25    nbrc:30
+check(testa = xx) nom > jean pierre coucou as400<  count:25  capacity:25    nbrc:30  
+  check:false 
+stop
+
+[soleil@DRAGON Ztext]$ 
+[soleil@DRAGON Ztext]$ ./Testzfld
+setZfld nom >早上好 test 🔥<  count:10  capacity:19   nbrc:30
+setZfld nom >té€34567890123456789012345678Z<  count:30  capacity:33   nbrc:30
+string nom >té€34567890123456789012345678Z<  count:30  capacity:33    nbrc:30  
+XX:>té€34567890123456789012345678Z<
+clear nom ><  count:0  capacity:0    nbrc:30
+clone nom >t€é123456789012345678901234567<  count:31  capacity:34    nbrc:30
+nom:>t€é123456789012345678901234567<
+setZfld nom3 >abcd<  count:4  capacity:4    nbrc:30
+copy nom >t€é123456789012345678901234567<  count:30  capacity:33    nbrc:30
+nom3:>t€é123456789012345678901234567<
+pop nom3  >t€é12345678901234567890123456<  count:29  capacity:32    nbrc:30
+-------------------------------
+
+
+nom2.substr(nom,12,10)
+
+getsubStr(12,10) nom >t€é123456789012345678901234567< count:10  capacity:10    nbrc:10  
+nom2:>0123456789<
+
+nom2.substr(nom,0,10)
+
+getsubStr(0,10) nom >t€é123456789012345678901234567< count:10  capacity:13    nbrc:10  
+nom2:>t€é1234567<
+nom3.substr(nom2,0,10)
+
+getsubStr(0,10) nom2 >t€é1234567< count:10  capacity:13    nbrc:30  
+nom3:>t€é1234567<
+
+nom3.substr(nom2,9,1)
+
+getsubStr(10,0) nom2 >t€é1234567< count:1  capacity:1    nbrc:30  
+nom3:>7<
+-------------------------------
+
+
+nom3.remove(0,16)
+
+setZfld nom3>0123456789abcdef< count:16  capacity:16    nbrc:30  
+remove(0,16) nom3 >< count:0  capacity:0    nbrc:30  
+
+nom3.remove(10,6)
+
+
+
+setZfld nom3>0123456789abcdef< count:16  capacity:16    nbrc:30  
+remove(10,16) nom3 >0123456789< count:10  capacity:10    nbrc:30  
+
+nom3.remove(0,1)
+
+remove(0,1) nom3 >123456789< count:9  capacity:9    nbrc:30  
+
+nom3.remove(15,1)
+
+
+
+setZfld nom3>0123456789abcdef< count:16  capacity:16    nbrc:30  
+remove(15,1) nom3 >0123456789abcde< count:15  capacity:15    nbrc:30  
+-------------------------------
+
+
+nom.isEmpty()
+
+
+
+setZfld nom3>< count:0  capacity:0    nbrc:30  
+nom.isEmpty() nom >< count:0  capacity:0    nbrc:30 isEmpty:true 
+
+
+setZfld nom3>Jean Pierre< count:11  capacity:11    nbrc:30  
+nom.isEmpty() nom >Jean Pierre< count:11  capacity:11    nbrc:30 isEmpty:false 
+-------------------------------
+
+
+nom.find("n")
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+find('n') >Jean Pierre<  count:11  capacity:11    nbrc:30 find:3
+
+nom.remove(0,rep)
+
+remove(0,3) nom >n Pierre< count:8  capacity:8    nbrc:30  
+
+nom.find("?")
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+find('?') >Jean Pierre<  count:11  capacity:11    nbrc:30 
+ err-find:null
+-------------------------------
+
+
+nom.rfind("P")
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+rfind('P') >Jean Pierre<  count:11  capacity:11    nbrc:30 find:5
+
+nom.remove( rep ,1)
+
+remove(5,1) nom >Jean ierre< count:10  capacity:10    nbrc:30  
+
+nom.rfind("?")
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+rfind('?') >Jean Pierre<  count:11  capacity:11    nbrc:30 
+ err-find:null
+-------------------------------
+
+
+nom.findPos(5,"e")
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+findPos('e',5) >Jean Pierre<  count:11  capacity:11    nbrc:30 find:7
+
+nom.remove( rep ,1)
+
+remove(7,1) nom >Jean Pirre< count:10  capacity:10    nbrc:30  
+
+nom.findPos(5,"?")
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+rfind(5,'?') >Jean Pierre<  count:11  capacity:11    nbrc:30 
+ err-find:null
+-------------------------------
+
+
+nom.concat(nom2)
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+
+
+setZfld nom> Zig< count:4  capacity:4    nbrc:10  
+concat nom + nom2 >Jean Pierre Zig<  count:15  capacity:15    nbrc:30 
+
+nom.concat(nom2)
+
+
+
+clear nom>< count:0  capacity:0    nbrc:30  
+
+
+setZfld nom> Zig< count:4  capacity:4    nbrc:10  
+concat nom + nom2 > Zig<  count:4  capacity:4    nbrc:30 
+
+nom.concat(nom2)
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+
+
+clear nom>< count:0  capacity:0    nbrc:10  
+concat nom + nom2 >Jean Pierre<  count:11  capacity:11    nbrc:30 
+
+nom.concat(nom2)
+
+
+
+clear nom>< count:0  capacity:0    nbrc:30  
+
+
+clear nom>< count:0  capacity:0    nbrc:10  
+concat nom + nom2 ><  count:0  capacity:0    nbrc:30 
+
+nom.concatStr(nom2)
+
+
+
+setZfld nom>Test< count:4  capacity:4    nbrc:30  
+concat nom + 'bonjour' >Test bonjour<  count:12  capacity:12    nbrc:30 
+-------------------------------
+
+
+nom.replace( Pierre , toto)
+
+
+
+ setZfld nom>Jean Pierre AS400< count:17  capacity:17    nbrc:30  
+replace("Pierre", "toto") >Jean toto AS400<  count:15  capacity:15    nbrc:30    relace Ok : true
+
+
+ setZfld nom>Jean Pierre AS400< count:17  capacity:17    nbrc:30  
+replace("Jean", "Informaticien") >Informaticien Pierre AS400<  count:26  capacity:26    nbrc:30    relace Ok : true
+
+
+ setZfld nom>Jean Pierre AS400< count:17  capacity:17    nbrc:30  
+replace("Yttt", "Informaticien") >Jean Pierre AS400<  count:17  capacity:17    nbrc:30    relace Ok : false
+
+
+ setZfld nom>< count:0  capacity:0    nbrc:30  
+replace("Yttt", "Informaticien") ><  count:0  capacity:0    nbrc:30    relace Ok : false
+-------------------------------
+
+
+nom.reverse()
+
+
+
+ setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+reverse>erreiP naeJ<  count:11  capacity:11    nbrc:30
+-------------------------------
+
+
+nom.truncat(5)
+
+
+
+ setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+truncat(5) >Jean <  count:5  capacity:5    nbrc:30
+-------------------------------
+
+
+nom.uppercase() jean pierre
+
+uppercase >JEAN PIERRE<  count:11  capacity:11    nbrc:30
+
+nom.lowercase()
+
+lowercase >jean pierre<  count:11  capacity:11    nbrc:30
+
+nom.capitalized()
+
+toCapitalized >Jean Pierre<  count:11  capacity:11    nbrc:30
+
+nom.uppercase()  pédalier
+
+uppercase >PÉDALIER<  count:8  capacity:9    nbrc:30
+
+nom.lowercase()
+
+lowercase >pédalier<  count:8  capacity:9    nbrc:30
+
+nom.capitalized()
+
+toCapitalized   Pédalier  count:10  capacity:11    nbrc:30
+-------------------------------
+
+
+nom.trim())
+
+
+
+ setZfld nom> jean pierre < count:13  capacity:13    nbrc:30  
+trim >jean pierre<  count:11  capacity:11    nbrc:30
+
+nom.trimLeft())
+
+
+
+ setZfld nom> jean pierre< count:12  capacity:12    nbrc:30  
+trimLeft >jean pierre<  count:11  capacity:11    nbrc:30
+trimLeft('Jean') > pierre<  count:7  capacity:7    nbrc:30
+
+nom.trimRight())
+
+
+
+ setZfld nom> jean pierre < count:13  capacity:13    nbrc:30  
+trimRight(' ') > jean pierre<  count:12  capacity:12    nbrc:30
+trimRight('e') > jean pierr<  count:11  capacity:11    nbrc:30
+trimRight('rr') > jean pie<  count:9  capacity:9    nbrc:30
+-------------------------------
+
+cmpeql(coucou,coucou)  true
+cmpxx(coucou,)  EQ
+cmpeql(coucou,coucou)  true
+cmpxx(coucou,coucou)  EQ
+cmpxx(coucou,aaaaaa)  GT
+cmpxx(coucou,yaaaaa)  LT
+setZfld nom > jean pierre as400<  count:18  capacity:18    nbrc:30
+checkStr('pierre') nom > jean pierre as400<  count:18  capacity:18    nbrc:30  
+ check:true 
+setZfld nom > jean pierre coucou as400<  count:25  capacity:25    nbrc:30
+check(testa) nom > jean pierre coucou as400<  count:25  capacity:25    nbrc:30  
+  check:true 
+setZfld nom > jean pierre as400<  count:18  capacity:18    nbrc:30
+checkStr('xx') nom > jean pierre as400<  count:18  capacity:18    nbrc:30  
+ check:false 
+setZfld nom > jean pierre coucou as400<  count:25  capacity:25    nbrc:30
+check(testa = xx) nom > jean pierre coucou as400<  count:25  capacity:25    nbrc:30  
+  check:false 
+stop
+
+[soleil@DRAGON Ztext]$ 
+[soleil@DRAGON Ztext]$ ./Testzfld
+setZfld nom >早上好 test 🔥<  count:10  capacity:19   nbrc:30
+setZfld nom >té€34567890123456789012345678Z<  count:30  capacity:33   nbrc:30
+string nom >té€34567890123456789012345678Z<  count:30  capacity:33    nbrc:30  
+XX:>té€34567890123456789012345678Z<
+clear nom ><  count:0  capacity:0    nbrc:30
+clone nom >t€é123456789012345678901234567<  count:31  capacity:34    nbrc:30
+nom:>t€é123456789012345678901234567<
+setZfld nom3 >abcd<  count:4  capacity:4    nbrc:30
+copy nom >t€é123456789012345678901234567<  count:30  capacity:33    nbrc:30
+nom3:>t€é123456789012345678901234567<
+pop nom3  >t€é12345678901234567890123456<  count:29  capacity:32    nbrc:30
+-------------------------------
+
+
+nom2.substr(nom,12,10)
+
+getsubStr(12,10) nom >t€é123456789012345678901234567< count:10  capacity:10    nbrc:10  
+nom2:>0123456789<
+
+nom2.substr(nom,0,10)
+
+getsubStr(0,10) nom >t€é123456789012345678901234567< count:10  capacity:13    nbrc:10  
+nom2:>t€é1234567<
+nom3.substr(nom2,0,10)
+
+getsubStr(0,10) nom2 >t€é1234567< count:10  capacity:13    nbrc:30  
+nom3:>t€é1234567<
+
+nom3.substr(nom2,9,1)
+
+getsubStr(10,0) nom2 >t€é1234567< count:1  capacity:1    nbrc:30  
+nom3:>7<
+-------------------------------
+
+
+nom3.remove(0,16)
+
+setZfld nom3>0123456789abcdef< count:16  capacity:16    nbrc:30  
+remove(0,16) nom3 >< count:0  capacity:0    nbrc:30  
+
+nom3.remove(10,6)
+
+
+
+setZfld nom3>0123456789abcdef< count:16  capacity:16    nbrc:30  
+remove(10,16) nom3 >0123456789< count:10  capacity:10    nbrc:30  
+
+nom3.remove(0,1)
+
+remove(0,1) nom3 >123456789< count:9  capacity:9    nbrc:30  
+
+nom3.remove(15,1)
+
+
+
+setZfld nom3>0123456789abcdef< count:16  capacity:16    nbrc:30  
+remove(15,1) nom3 >0123456789abcde< count:15  capacity:15    nbrc:30  
+-------------------------------
+
+
+nom.isEmpty()
+
+
+
+setZfld nom3>< count:0  capacity:0    nbrc:30  
+nom.isEmpty() nom >< count:0  capacity:0    nbrc:30 isEmpty:true 
+
+
+setZfld nom3>Jean Pierre< count:11  capacity:11    nbrc:30  
+nom.isEmpty() nom >Jean Pierre< count:11  capacity:11    nbrc:30 isEmpty:false 
+-------------------------------
+
+
+nom.find("n")
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+find('n') >Jean Pierre<  count:11  capacity:11    nbrc:30 find:3
+
+nom.remove(0,rep)
+
+remove(0,3) nom >n Pierre< count:8  capacity:8    nbrc:30  
+
+nom.find("?")
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+find('?') >Jean Pierre<  count:11  capacity:11    nbrc:30 
+ err-find:null
+-------------------------------
+
+
+nom.rfind("P")
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+rfind('P') >Jean Pierre<  count:11  capacity:11    nbrc:30 find:5
+
+nom.remove( rep ,1)
+
+remove(5,1) nom >Jean ierre< count:10  capacity:10    nbrc:30  
+
+nom.rfind("?")
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+rfind('?') >Jean Pierre<  count:11  capacity:11    nbrc:30 
+ err-find:null
+-------------------------------
+
+
+nom.findPos(5,"e")
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+findPos('e',5) >Jean Pierre<  count:11  capacity:11    nbrc:30 find:7
+
+nom.remove( rep ,1)
+
+remove(7,1) nom >Jean Pirre< count:10  capacity:10    nbrc:30  
+
+nom.findPos(5,"?")
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+rfind(5,'?') >Jean Pierre<  count:11  capacity:11    nbrc:30 
+ err-find:null
+-------------------------------
+
+
+nom.concat(nom2)
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+
+
+setZfld nom> Zig< count:4  capacity:4    nbrc:10  
+concat nom + nom2 >Jean Pierre Zig<  count:15  capacity:15    nbrc:30 
+
+nom.concat(nom2)
+
+
+
+clear nom>< count:0  capacity:0    nbrc:30  
+
+
+setZfld nom> Zig< count:4  capacity:4    nbrc:10  
+concat nom + nom2 > Zig<  count:4  capacity:4    nbrc:30 
+
+nom.concat(nom2)
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+
+
+clear nom>< count:0  capacity:0    nbrc:10  
+concat nom + nom2 >Jean Pierre<  count:11  capacity:11    nbrc:30 
+
+nom.concat(nom2)
+
+
+
+clear nom>< count:0  capacity:0    nbrc:30  
+
+
+clear nom>< count:0  capacity:0    nbrc:10  
+concat nom + nom2 ><  count:0  capacity:0    nbrc:30 
+
+nom.concatStr(nom2)
+
+
+
+setZfld nom>Test< count:4  capacity:4    nbrc:30  
+concat nom + 'bonjour' >Test bonjour<  count:12  capacity:12    nbrc:30 
+-------------------------------
+
+
+nom.replace( Pierre , toto)
+
+
+
+ setZfld nom>Jean Pierre AS400< count:17  capacity:17    nbrc:30  
+replace("Pierre", "toto") >Jean toto AS400<  count:15  capacity:15    nbrc:30    relace Ok : true
+
+
+ setZfld nom>Jean Pierre AS400< count:17  capacity:17    nbrc:30  
+replace("Jean", "Informaticien") >Informaticien Pierre AS400<  count:26  capacity:26    nbrc:30    relace Ok : true
+
+
+ setZfld nom>Jean Pierre AS400< count:17  capacity:17    nbrc:30  
+replace("Yttt", "Informaticien") >Jean Pierre AS400<  count:17  capacity:17    nbrc:30    relace Ok : false
+
+
+ setZfld nom>< count:0  capacity:0    nbrc:30  
+replace("Yttt", "Informaticien") ><  count:0  capacity:0    nbrc:30    relace Ok : false
+-------------------------------
+
+
+nom.reverse()
+
+
+
+ setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+reverse>erreiP naeJ<  count:11  capacity:11    nbrc:30
+-------------------------------
+
+
+nom.truncat(5)
+
+
+
+ setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+truncat(5) >Jean <  count:5  capacity:5    nbrc:30
+-------------------------------
+
+
+nom.uppercase() jean pierre
+
+uppercase >JEAN PIERRE<  count:11  capacity:11    nbrc:30
+
+nom.lowercase()
+
+lowercase >jean pierre<  count:11  capacity:11    nbrc:30
+
+nom.capitalized()
+
+toCapitalized >Jean Pierre<  count:11  capacity:11    nbrc:30
+
+nom.uppercase()  pédalier
+
+uppercase >PÉDALIER<  count:8  capacity:9    nbrc:30
+
+nom.lowercase()
+
+lowercase >pédalier<  count:8  capacity:9    nbrc:30
+
+nom.capitalized()
+
+toCapitalized   Pédalier  count:10  capacity:11    nbrc:30
+-------------------------------
+
+
+nom.trim())
+
+
+
+ setZfld nom> jean pierre < count:13  capacity:13    nbrc:30  
+trim >jean pierre<  count:11  capacity:11    nbrc:30
+
+nom.trimLeft())
+
+
+
+ setZfld nom> jean pierre< count:12  capacity:12    nbrc:30  
+trimLeft >jean pierre<  count:11  capacity:11    nbrc:30
+trimLeft('Jean') > pierre<  count:7  capacity:7    nbrc:30
+
+nom.trimRight())
+
+
+
+ setZfld nom> jean pierre < count:13  capacity:13    nbrc:30  
+trimRight(' ') > jean pierre<  count:12  capacity:12    nbrc:30
+trimRight('e') > jean pierr<  count:11  capacity:11    nbrc:30
+trimRight('rr') > jean pie<  count:9  capacity:9    nbrc:30
+-------------------------------
+
+cmpeql(coucou,coucou)  true
+cmpxx(coucou,)  EQ
+cmpeql(coucou,coucou)  true
+cmpxx(coucou,coucou)  EQ
+cmpxx(coucou,aaaaaa)  GT
+cmpxx(coucou,yaaaaa)  LT
+setZfld nom > jean pierre as400<  count:18  capacity:18    nbrc:30
+checkStr('pierre') nom > jean pierre as400<  count:18  capacity:18    nbrc:30  
+ check:true 
+setZfld nom > jean pierre coucou as400<  count:25  capacity:25    nbrc:30
+check(testa) nom > jean pierre coucou as400<  count:25  capacity:25    nbrc:30  
+  check:true 
+setZfld nom > jean pierre as400<  count:18  capacity:18    nbrc:30
+checkStr('xx') nom > jean pierre as400<  count:18  capacity:18    nbrc:30  
+ check:false 
+setZfld nom > jean pierre coucou as400<  count:25  capacity:25    nbrc:30
+check(testa = xx) nom > jean pierre coucou as400<  count:25  capacity:25    nbrc:30  
+  check:false 
+j
+
+stop
+
+[soleil@DRAGON Ztext]$ 
+[soleil@DRAGON Ztext]$ ./Testzfld
+setZfld nom >早上好 test 🔥<  count:10  capacity:19   nbrc:30
+setZfld nom >té€34567890123456789012345678Z<  count:30  capacity:33   nbrc:30
+string nom >té€34567890123456789012345678Z<  count:30  capacity:33    nbrc:30  
+XX:>té€34567890123456789012345678Z<
+clear nom ><  count:0  capacity:0    nbrc:30
+clone nom >t€é123456789012345678901234567<  count:31  capacity:34    nbrc:30
+nom:>t€é123456789012345678901234567<
+setZfld nom3 >abcd<  count:4  capacity:4    nbrc:30
+copy nom >t€é123456789012345678901234567<  count:30  capacity:33    nbrc:30
+nom3:>t€é123456789012345678901234567<
+pop nom3  >t€é12345678901234567890123456<  count:29  capacity:32    nbrc:30
+-------------------------------
+
+
+nom2.substr(nom,12,10)
+
+getsubStr(12,10) nom >t€é123456789012345678901234567< count:10  capacity:10    nbrc:10  
+nom2:>0123456789<
+
+nom2.substr(nom,0,10)
+
+getsubStr(0,10) nom >t€é123456789012345678901234567< count:10  capacity:13    nbrc:10  
+nom2:>t€é1234567<
+nom3.substr(nom2,0,10)
+
+getsubStr(0,10) nom2 >t€é1234567< count:10  capacity:13    nbrc:30  
+nom3:>t€é1234567<
+
+nom3.substr(nom2,9,1)
+
+getsubStr(10,0) nom2 >t€é1234567< count:1  capacity:1    nbrc:30  
+nom3:>7<
+-------------------------------
+
+
+nom3.remove(0,16)
+
+setZfld nom3>0123456789abcdef< count:16  capacity:16    nbrc:30  
+remove(0,16) nom3 >< count:0  capacity:0    nbrc:30  
+
+nom3.remove(10,6)
+
+
+
+setZfld nom3>0123456789abcdef< count:16  capacity:16    nbrc:30  
+remove(10,16) nom3 >0123456789< count:10  capacity:10    nbrc:30  
+
+nom3.remove(0,1)
+
+remove(0,1) nom3 >123456789< count:9  capacity:9    nbrc:30  
+
+nom3.remove(15,1)
+
+
+
+setZfld nom3>0123456789abcdef< count:16  capacity:16    nbrc:30  
+remove(15,1) nom3 >0123456789abcde< count:15  capacity:15    nbrc:30  
+-------------------------------
+
+
+nom.isEmpty()
+
+
+
+setZfld nom3>< count:0  capacity:0    nbrc:30  
+nom.isEmpty() nom >< count:0  capacity:0    nbrc:30 isEmpty:true 
+
+
+setZfld nom3>Jean Pierre< count:11  capacity:11    nbrc:30  
+nom.isEmpty() nom >Jean Pierre< count:11  capacity:11    nbrc:30 isEmpty:false 
+-------------------------------
+
+
+nom.find("n")
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+find('n') >Jean Pierre<  count:11  capacity:11    nbrc:30 find:3
+
+nom.remove(0,rep)
+
+remove(0,3) nom >n Pierre< count:8  capacity:8    nbrc:30  
+
+nom.find("?")
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+find('?') >Jean Pierre<  count:11  capacity:11    nbrc:30 
+ err-find:null
+-------------------------------
+
+
+nom.rfind("P")
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+rfind('P') >Jean Pierre<  count:11  capacity:11    nbrc:30 find:5
+
+nom.remove( rep ,1)
+
+remove(5,1) nom >Jean ierre< count:10  capacity:10    nbrc:30  
+
+nom.rfind("?")
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+rfind('?') >Jean Pierre<  count:11  capacity:11    nbrc:30 
+ err-find:null
+-------------------------------
+
+
+nom.findPos(5,"e")
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+findPos('e',5) >Jean Pierre<  count:11  capacity:11    nbrc:30 find:7
+
+nom.remove( rep ,1)
+
+remove(7,1) nom >Jean Pirre< count:10  capacity:10    nbrc:30  
+
+nom.findPos(5,"?")
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+rfind(5,'?') >Jean Pierre<  count:11  capacity:11    nbrc:30 
+ err-find:null
+-------------------------------
+
+
+nom.concat(nom2)
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+
+
+setZfld nom> Zig< count:4  capacity:4    nbrc:10  
+concat nom + nom2 >Jean Pierre Zig<  count:15  capacity:15    nbrc:30 
+
+nom.concat(nom2)
+
+
+
+clear nom>< count:0  capacity:0    nbrc:30  
+
+
+setZfld nom> Zig< count:4  capacity:4    nbrc:10  
+concat nom + nom2 > Zig<  count:4  capacity:4    nbrc:30 
+
+nom.concat(nom2)
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+
+
+clear nom>< count:0  capacity:0    nbrc:10  
+concat nom + nom2 >Jean Pierre<  count:11  capacity:11    nbrc:30 
+
+nom.concat(nom2)
+
+
+
+clear nom>< count:0  capacity:0    nbrc:30  
+
+
+clear nom>< count:0  capacity:0    nbrc:10  
+concat nom + nom2 ><  count:0  capacity:0    nbrc:30 
+
+nom.concatStr(nom2)
+
+
+
+setZfld nom>Test< count:4  capacity:4    nbrc:30  
+concat nom + 'bonjour' >Test bonjour<  count:12  capacity:12    nbrc:30 
+-------------------------------
+
+
+nom.replace( Pierre , toto)
+
+
+
+ setZfld nom>Jean Pierre AS400< count:17  capacity:17    nbrc:30  
+replace("Pierre", "toto") >Jean toto AS400<  count:15  capacity:15    nbrc:30    relace Ok : true
+
+
+ setZfld nom>Jean Pierre AS400< count:17  capacity:17    nbrc:30  
+replace("Jean", "Informaticien") >Informaticien Pierre AS400<  count:26  capacity:26    nbrc:30    relace Ok : true
+
+
+ setZfld nom>Jean Pierre AS400< count:17  capacity:17    nbrc:30  
+replace("Yttt", "Informaticien") >Jean Pierre AS400<  count:17  capacity:17    nbrc:30    relace Ok : false
+
+
+ setZfld nom>< count:0  capacity:0    nbrc:30  
+replace("Yttt", "Informaticien") ><  count:0  capacity:0    nbrc:30    relace Ok : false
+-------------------------------
+
+
+nom.reverse()
+
+
+
+ setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+reverse>erreiP naeJ<  count:11  capacity:11    nbrc:30
+-------------------------------
+
+
+nom.truncat(5)
+
+
+
+ setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+truncat(5) >Jean <  count:5  capacity:5    nbrc:30
+-------------------------------
+
+
+nom.uppercase() jean pierre
+
+uppercase >JEAN PIERRE<  count:11  capacity:11    nbrc:30
+
+nom.lowercase()
+
+lowercase >jean pierre<  count:11  capacity:11    nbrc:30
+
+nom.capitalized()
+
+toCapitalized >Jean Pierre<  count:11  capacity:11    nbrc:30
+
+nom.uppercase()  pédalier
+
+uppercase >PÉDALIER<  count:8  capacity:9    nbrc:30
+
+nom.lowercase()
+
+lowercase >pédalier<  count:8  capacity:9    nbrc:30
+
+nom.capitalized()
+
+toCapitalized   Pédalier  count:10  capacity:11    nbrc:30
+-------------------------------
+
+
+nom.trim())
+
+
+
+ setZfld nom> jean pierre < count:13  capacity:13    nbrc:30  
+trim >jean pierre<  count:11  capacity:11    nbrc:30
+
+nom.trimLeft())
+
+
+
+ setZfld nom> jean pierre< count:12  capacity:12    nbrc:30  
+trimLeft >jean pierre<  count:11  capacity:11    nbrc:30
+trimLeft('Jean') > pierre<  count:7  capacity:7    nbrc:30
+
+nom.trimRight())
+
+
+
+ setZfld nom> jean pierre < count:13  capacity:13    nbrc:30  
+trimRight(' ') > jean pierre<  count:12  capacity:12    nbrc:30
+trimRight('e') > jean pierr<  count:11  capacity:11    nbrc:30
+trimRight('rr') > jean pie<  count:9  capacity:9    nbrc:30
+-------------------------------
+
+cmpeql(coucou,coucou)  true
+cmpxx(coucou,)  EQ
+cmpeql(coucou,coucou)  true
+cmpxx(coucou,coucou)  EQ
+cmpxx(coucou,aaaaaa)  GT
+cmpxx(coucou,yaaaaa)  LT
+setZfld nom > jean pierre as400<  count:18  capacity:18    nbrc:30
+checkStr('pierre') nom > jean pierre as400<  count:18  capacity:18    nbrc:30  
+ check:true 
+setZfld nom > jean pierre coucou as400<  count:25  capacity:25    nbrc:30
+check(testa) nom > jean pierre coucou as400<  count:25  capacity:25    nbrc:30  
+  check:true 
+setZfld nom > jean pierre as400<  count:18  capacity:18    nbrc:30
+checkStr('xx') nom > jean pierre as400<  count:18  capacity:18    nbrc:30  
+ check:false 
+setZfld nom > jean pierre coucou as400<  count:25  capacity:25    nbrc:30
+check(testa = xx) nom > jean pierre coucou as400<  count:25  capacity:25    nbrc:30  
+  check:false 
+j
+
+thread 37753 panic: 
+
+ file:zfield.zig line:670 column:27 func:charAt  err:error.InvalidRange
+
+/home/soleil/Ztext/library/zfield/zfield.zig:672:86: 0x1053b0c in charAt (Testzfld)
+                    .{s.file, s.line, s.column,s.fn_name,Error.InvalidRange})  catch unreachable
+                                                                                     ^
+/home/soleil/Ztext/src-zig/Testzfld.zig:610:20: 0x1047ce6 in main (Testzfld)
+    xx = nom.charAt(31);
+                   ^
+/home/soleil/.zig/lib/std/start.zig:656:37: 0x1042ad1 in posixCallMainAndExit (Testzfld)
+            const result = root.main() catch |err| {
+                                    ^
+/home/soleil/.zig/lib/std/start.zig:271:5: 0x10426dd in _start (Testzfld)
+    asm volatile (switch (native_arch) {
+    ^
+???:?:?: 0x0 in ??? (???)
+
+Abandon (core dumped)
+[soleil@DRAGON Ztext]$ 
+[soleil@DRAGON Ztext]$ 
+[soleil@DRAGON Ztext]$ ./Testzfld
+setZfld nom >早上好 test 🔥<  count:10  capacity:19   nbrc:30
+setZfld nom >té€34567890123456789012345678Z<  count:30  capacity:33   nbrc:30
+string nom >té€34567890123456789012345678Z<  count:30  capacity:33    nbrc:30  
+XX:>té€34567890123456789012345678Z<
+clear nom ><  count:0  capacity:0    nbrc:30
+clone nom >t€é123456789012345678901234567<  count:31  capacity:34    nbrc:30
+nom:>t€é123456789012345678901234567<
+setZfld nom3 >abcd<  count:4  capacity:4    nbrc:30
+copy nom >t€é123456789012345678901234567<  count:30  capacity:33    nbrc:30
+nom3:>t€é123456789012345678901234567<
+pop nom3  >t€é12345678901234567890123456<  count:29  capacity:32    nbrc:30
+-------------------------------
+
+
+nom2.substr(nom,12,10)
+
+getsubStr(12,10) nom >t€é123456789012345678901234567< count:10  capacity:10    nbrc:10  
+nom2:>0123456789<
+
+nom2.substr(nom,0,10)
+
+getsubStr(0,10) nom >t€é123456789012345678901234567< count:10  capacity:13    nbrc:10  
+nom2:>t€é1234567<
+nom3.substr(nom2,0,10)
+
+getsubStr(0,10) nom2 >t€é1234567< count:10  capacity:13    nbrc:30  
+nom3:>t€é1234567<
+
+nom3.substr(nom2,9,1)
+
+getsubStr(10,0) nom2 >t€é1234567< count:1  capacity:1    nbrc:30  
+nom3:>7<
+-------------------------------
+
+
+nom3.remove(0,16)
+
+setZfld nom3>0123456789abcdef< count:16  capacity:16    nbrc:30  
+remove(0,16) nom3 >< count:0  capacity:0    nbrc:30  
+
+nom3.remove(10,6)
+
+
+
+setZfld nom3>0123456789abcdef< count:16  capacity:16    nbrc:30  
+remove(10,16) nom3 >0123456789< count:10  capacity:10    nbrc:30  
+
+nom3.remove(0,1)
+
+remove(0,1) nom3 >123456789< count:9  capacity:9    nbrc:30  
+
+nom3.remove(15,1)
+
+
+
+setZfld nom3>0123456789abcdef< count:16  capacity:16    nbrc:30  
+remove(15,1) nom3 >0123456789abcde< count:15  capacity:15    nbrc:30  
+-------------------------------
+
+
+nom.isEmpty()
+
+
+
+setZfld nom3>< count:0  capacity:0    nbrc:30  
+nom.isEmpty() nom >< count:0  capacity:0    nbrc:30 isEmpty:true 
+
+
+setZfld nom3>Jean Pierre< count:11  capacity:11    nbrc:30  
+nom.isEmpty() nom >Jean Pierre< count:11  capacity:11    nbrc:30 isEmpty:false 
+-------------------------------
+
+
+nom.find("n")
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+find('n') >Jean Pierre<  count:11  capacity:11    nbrc:30 find:3
+
+nom.remove(0,rep)
+
+remove(0,3) nom >n Pierre< count:8  capacity:8    nbrc:30  
+
+nom.find("?")
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+find('?') >Jean Pierre<  count:11  capacity:11    nbrc:30 
+ err-find:null
+-------------------------------
+
+
+nom.rfind("P")
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+rfind('P') >Jean Pierre<  count:11  capacity:11    nbrc:30 find:5
+
+nom.remove( rep ,1)
+
+remove(5,1) nom >Jean ierre< count:10  capacity:10    nbrc:30  
+
+nom.rfind("?")
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+rfind('?') >Jean Pierre<  count:11  capacity:11    nbrc:30 
+ err-find:null
+-------------------------------
+
+
+nom.findPos(5,"e")
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+findPos('e',5) >Jean Pierre<  count:11  capacity:11    nbrc:30 find:7
+
+nom.remove( rep ,1)
+
+remove(7,1) nom >Jean Pirre< count:10  capacity:10    nbrc:30  
+
+nom.findPos(5,"?")
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+rfind(5,'?') >Jean Pierre<  count:11  capacity:11    nbrc:30 
+ err-find:null
+-------------------------------
+
+
+nom.concat(nom2)
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+
+
+setZfld nom> Zig< count:4  capacity:4    nbrc:10  
+concat nom + nom2 >Jean Pierre Zig<  count:15  capacity:15    nbrc:30 
+
+nom.concat(nom2)
+
+
+
+clear nom>< count:0  capacity:0    nbrc:30  
+
+
+setZfld nom> Zig< count:4  capacity:4    nbrc:10  
+concat nom + nom2 > Zig<  count:4  capacity:4    nbrc:30 
+
+nom.concat(nom2)
+
+
+
+setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+
+
+clear nom>< count:0  capacity:0    nbrc:10  
+concat nom + nom2 >Jean Pierre<  count:11  capacity:11    nbrc:30 
+
+nom.concat(nom2)
+
+
+
+clear nom>< count:0  capacity:0    nbrc:30  
+
+
+clear nom>< count:0  capacity:0    nbrc:10  
+concat nom + nom2 ><  count:0  capacity:0    nbrc:30 
+
+nom.concatStr(nom2)
+
+
+
+setZfld nom>Test< count:4  capacity:4    nbrc:30  
+concat nom + 'bonjour' >Test bonjour<  count:12  capacity:12    nbrc:30 
+-------------------------------
+
+
+nom.replace( Pierre , toto)
+
+
+
+ setZfld nom>Jean Pierre AS400< count:17  capacity:17    nbrc:30  
+replace("Pierre", "toto") >Jean toto AS400<  count:15  capacity:15    nbrc:30    relace Ok : true
+
+
+ setZfld nom>Jean Pierre AS400< count:17  capacity:17    nbrc:30  
+replace("Jean", "Informaticien") >Informaticien Pierre AS400<  count:26  capacity:26    nbrc:30    relace Ok : true
+
+
+ setZfld nom>Jean Pierre AS400< count:17  capacity:17    nbrc:30  
+replace("Yttt", "Informaticien") >Jean Pierre AS400<  count:17  capacity:17    nbrc:30    relace Ok : false
+
+
+ setZfld nom>< count:0  capacity:0    nbrc:30  
+replace("Yttt", "Informaticien") ><  count:0  capacity:0    nbrc:30    relace Ok : false
+-------------------------------
+
+
+nom.reverse()
+
+
+
+ setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+reverse>erreiP naeJ<  count:11  capacity:11    nbrc:30
+-------------------------------
+
+
+nom.truncat(5)
+
+
+
+ setZfld nom>Jean Pierre< count:11  capacity:11    nbrc:30  
+truncat(5) >Jean <  count:5  capacity:5    nbrc:30
+-------------------------------
+
+
+nom.uppercase() jean pierre
+
+uppercase >JEAN PIERRE<  count:11  capacity:11    nbrc:30
+
+nom.lowercase()
+
+lowercase >jean pierre<  count:11  capacity:11    nbrc:30
+
+nom.capitalized()
+
+toCapitalized >Jean Pierre<  count:11  capacity:11    nbrc:30
+
+nom.uppercase()  pédalier
+
+uppercase >PÉDALIER<  count:8  capacity:9    nbrc:30
+
+nom.lowercase()
+
+lowercase >pédalier<  count:8  capacity:9    nbrc:30
+
+nom.capitalized()
+
+toCapitalized   Pédalier  count:10  capacity:11    nbrc:30
+-------------------------------
+
+
+nom.trim())
+
+
+
+ setZfld nom> jean pierre < count:13  capacity:13    nbrc:30  
+trim >jean pierre<  count:11  capacity:11    nbrc:30
+
+nom.trimLeft())
+
+
+
+ setZfld nom> jean pierre< count:12  capacity:12    nbrc:30  
+trimLeft >jean pierre<  count:11  capacity:11    nbrc:30
+trimLeft('Jean') > pierre<  count:7  capacity:7    nbrc:30
+
+nom.trimRight())
+
+
+
+ setZfld nom> jean pierre < count:13  capacity:13    nbrc:30  
+trimRight(' ') > jean pierre<  count:12  capacity:12    nbrc:30
+trimRight('e') > jean pierr<  count:11  capacity:11    nbrc:30
+trimRight('rr') > jean pie<  count:9  capacity:9    nbrc:30
+-------------------------------
+
+cmpeql(coucou,coucou)  true
+cmpxx(coucou,)  EQ
+cmpeql(coucou,coucou)  true
+cmpxx(coucou,coucou)  EQ
+cmpxx(coucou,aaaaaa)  GT
+cmpxx(coucou,yaaaaa)  LT
+setZfld nom > jean pierre as400<  count:18  capacity:18    nbrc:30
+checkStr('pierre') nom > jean pierre as400<  count:18  capacity:18    nbrc:30  
+ check:true 
+setZfld nom > jean pierre coucou as400<  count:25  capacity:25    nbrc:30
+check(testa) nom > jean pierre coucou as400<  count:25  capacity:25    nbrc:30  
+  check:true 
+setZfld nom > jean pierre as400<  count:18  capacity:18    nbrc:30
+checkStr('xx') nom > jean pierre as400<  count:18  capacity:18    nbrc:30  
+ check:false 
+setZfld nom > jean pierre coucou as400<  count:25  capacity:25    nbrc:30
+check(testa = xx) nom > jean pierre coucou as400<  count:25  capacity:25    nbrc:30  
+  check:false 
+j
+
+ 
+
+j
+
+e
+
+a
+
+n
+
+ 
+
+p
+
+i
+
+e
+
+r
+
+r
+
+e
+
+ 
+
+c
+
+o
+
+u
+
+c
+
+o
+
+u
+
+ 
+
+a
+
+s
+
+4
+
+0
+
+0
+
+stop
+
+[soleil@DRAGON Ztext]$ 
+

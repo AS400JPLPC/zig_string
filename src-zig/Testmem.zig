@@ -50,17 +50,16 @@ pub fn main() !void {
 stdout.writeAll("\x1b[2J") catch {};
 stdout.writeAll("\x1b[3J") catch {};
 
-
-
+var work:zfld.ZFIELD = zfld.ZFIELD.init(30);
 var friend  = contact.initRecord();
 
     pause("start");
 
-    friend.name.setZfld("AS400JPLPC") catch unreachable;
-    friend.prenom.setZfld("Jean-Pierre") catch unreachable;
-    friend.rue1.setZfld(" 01 rue du sud-ouest") catch unreachable;
-    friend.ville.setZfld("Narbonne") catch unreachable;
-    friend.pays.setZfld("France") catch unreachable;
+    friend.name.setZfld("AS400JPLPC");
+    friend.prenom.setZfld("Jean-Pierre") ;
+    friend.rue1.setZfld(" 01 rue du sud-ouest") ;
+    friend.ville.setZfld("Narbonne");
+    friend.pays.setZfld("France");
     pause("setp-1   INIT value"); 
 
     var xx = friend.name.string();
@@ -85,34 +84,29 @@ var friend  = contact.initRecord();
     friend.name.clear();
     friend.name.debugContext();
     pause("step-X");
-    friend.name.setZfld("AS400JPLPC") catch unreachable;
+    friend.name.setZfld("AS400JPLPC");
 
-    std.debug.print("{} cmpeql\n",.{friend.name.cmpeql("test")});
+    std.debug.print("{} cmpeql\n",.{friend.name.cmpeqlStr("test")});
     
-    std.debug.print("{} cmpxx\n",.{friend.name.cmpxx("test")});
+    std.debug.print("{} cmpxx\n",.{friend.name.cmpxxStr("test")});
+   
+    work.substr(friend.prenom,1,4) ;
+    std.debug.print("{s}  substr:{s} \n",.{work.string(), friend.prenom.string()});
 
-    std.debug.print("name check:{}\n",.{friend.name.check()});
-    
-    xx = friend.prenom.getSubstr(1,4) catch | err | { std.debug.print("{}",.{err}) ; return ; };
-    std.debug.print("{s}  getSubstr:{s} \n",.{friend.prenom.string(),xx});
+    friend.ville.concatStr(" 11100");
 
-    friend.ville.concat(" 11100") catch | err | { std.debug.print("{}",.{err}); return; };
-
-    std.debug.print("{s} ville  check:{} \n",.{friend.ville.string(), friend.ville.check()});
+    std.debug.print("{s} ville\n",.{friend.ville.string() });
     friend.ville.debugContext();
       
 
-    friend.name.setFull("AS400JPLPC111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111") catch unreachable;
     friend.prenom.debugContext();
-     _=friend.prenom.replace("Jean",friend.name.string()) catch | err | { std.debug.print("{}",.{err}); return; };
-    pause("replace prenom");
-     std.debug.print("prenom check:{} \n",.{friend.prenom.check()});
+     _=friend.prenom.replace("Jean",friend.name.string());
     friend.prenom.debugContext();
-    std.debug.print("{s}  prenom check:{} \n",.{friend.prenom.string(),friend.prenom.check()});
+    std.debug.print("{s}  prenom \n",.{friend.prenom.string()});
     //the string normalize function always
     xx = friend.prenom.string();
     pause(xx);
-    friend.prenom.setZfld("Jean-Pierre") catch unreachable;
+    friend.prenom.setZfld("Jean-Pierre") ;
 
 
 
@@ -124,7 +118,6 @@ var friend  = contact.initRecord();
 
     zfld.deinitZfld();
  
-    // zfld.ZFIELD.arenaZfld.deinit();
     pause("stop");
 }
 
