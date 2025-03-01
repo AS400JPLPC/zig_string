@@ -86,16 +86,18 @@ pause("\nnom3.substr(nom2,9,1)");
 
 // test error builttin
 // pause("\nnom3.substr(nom2,0,20)");
-//         nom3.substr(nom2,10,0);
-//         std.debug.print("getsubStr(10,0) nom2 >{s}< count:{d}  capacity:{d}    nbrc:{d}  \n\rnom3:>{s}<\n\r",
-//             .{nom2.string(), nom3.count(), nom3.capacity(),  nom3.getnbc(), nom3.string()});
+        // nom2.clear();
+        // nom3.substr(nom2,10,0);
+        // std.debug.print("getsubStr(10,0) nom2 >{s}< count:{d}  capacity:{d}    nbrc:{d}  \n\rnom3:>{s}<\n\r",
+            // .{nom2.string(), nom3.count(), nom3.capacity(),  nom3.getnbc(), nom3.string()});
 
 
 // test error
 // pause("\nnom3.substr(nom2,10,0)");
-//         nom3.substr(nom2,10,0);
-//         std.debug.print("getsubStr(10,0) nom2 >{s}< count:{d}  capacity:{d}    nbrc:{d}  \n\rnom3:>{s}<\n\r",
-//             .{nom2.string(), nom3.count(), nom3.capacity(),  nom3.getnbc(), nom3.string()});
+        // nom2.setZfld("abcdef");
+        // nom3.substr(nom2,10,0);
+        // std.debug.print("getsubStr(10,0) nom2 >{s}< count:{d}  capacity:{d}    nbrc:{d}  \n\rnom3:>{s}<\n\r",
+            // .{nom2.string(), nom3.count(), nom3.capacity(),  nom3.getnbc(), nom3.string()});
 
 
 

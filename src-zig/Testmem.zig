@@ -110,12 +110,12 @@ var friend  = contact.initRecord();
 
 
 
-
-    
+    pause("step-3  deinitRecord"); 
     friend.deinitRecord();
-
-    pause("step-3  deinitRecord");
-
+    // test error
+    //friend.prenom.setZfld("Jean-Pierre") ;
+    
+    
     zfld.deinitZfld();
  
     pause("stop");
