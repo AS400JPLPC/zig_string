@@ -50,7 +50,6 @@ pub fn main() !void {
 stdout.writeAll("\x1b[2J") catch {};
 stdout.writeAll("\x1b[3J") catch {};
 
-var work:zfld = zfld.init(30);
 var friend  = contact.initRecord();
 
     pause("start");
@@ -58,6 +57,7 @@ var friend  = contact.initRecord();
     friend.name.setZfld("AS400JPLPC");
     friend.prenom.setZfld("Jean-Pierre") ;
     friend.rue1.setZfld(" 01 rue du sud-ouest") ;
+    friend.rue2.clear();
     friend.ville.setZfld("Narbonne");
     friend.pays.setZfld("France");
     pause("setp-1   INIT value"); 
@@ -68,47 +68,13 @@ var friend  = contact.initRecord();
     pause(xx);
     xx = friend.rue1.string();
     pause(xx);
+    xx = friend.rue2.string();
+    pause(xx);
     xx = friend.ville.string();
     pause(xx);
     xx = friend.pays.string();
     pause(xx);
     
-    pause("step-2");
-
-    friend.name.uppercase();
-    xx = friend.name.string();
-    pause(xx);
-
-    friend.name.debugContext();
-
-    friend.name.clear();
-    friend.name.debugContext();
-    pause("step-X");
-    friend.name.setZfld("AS400JPLPC");
-
-    std.debug.print("{} cmpeql\n",.{friend.name.cmpeqlStr("test")});
-    
-    std.debug.print("{} cmpxx\n",.{friend.name.cmpxxStr("test")});
-   
-    work.substr(friend.prenom,1,4) ;
-    std.debug.print("{s}  substr:{s} \n",.{work.string(), friend.prenom.string()});
-
-    friend.ville.concatStr(" 11100");
-
-    std.debug.print("{s} ville\n",.{friend.ville.string() });
-    friend.ville.debugContext();
-      
-
-    friend.prenom.debugContext();
-     _=friend.prenom.replace("Jean",friend.name.string());
-    friend.prenom.debugContext();
-    std.debug.print("{s}  prenom \n",.{friend.prenom.string()});
-    //the string normalize function always
-    xx = friend.prenom.string();
-    pause(xx);
-    friend.prenom.setZfld("Jean-Pierre") ;
-
-
 
     pause("step-3  deinitRecord"); 
     friend.deinitRecord();

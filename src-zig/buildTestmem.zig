@@ -21,11 +21,12 @@ pub fn build(b: *std.Build) void {
 
     const Prog = b.addExecutable(.{
     .name = "Testmem",
-    .root_source_file = b.path( "./Testmem.zig" ),
-    .target = target,
-    .optimize = optimize,
+    .root_module = b.createModule(.{
+        .root_source_file = b.path( "./Testmem.zig" ),
+        .target = target,
+        .optimize = optimize,
+    }),
     });
-
 
     Prog.root_module.addImport("zfield", zfield);
 

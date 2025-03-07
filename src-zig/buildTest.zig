@@ -13,14 +13,13 @@ pub fn build(b: *std.Build) void {
     // Building the executable
 
     const Prog = b.addExecutable(.{
-    .name = "Testzfld",
+    .name = "Test",
     .root_module = b.createModule(.{
-        .root_source_file = b.path( "./Testzfld.zig" ),
+        .root_source_file = b.path( "./Test.zig" ),
         .target = target,
         .optimize = optimize,
-    }),
+        }),
     });
-
     Prog.root_module.addImport("zfield", zfield);
 
 

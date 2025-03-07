@@ -6,7 +6,7 @@
 
 const std = @import("std");
 
-const zfld = @import("zfield");
+const zfld = @import("zfield").ZFIELD;
 
 const stdout = std.io.getStdOut().writer();
 const stdin = std.io.getStdIn().reader();
@@ -14,8 +14,8 @@ pub fn main() !void {
 
 
 
-var nom = zfld.ZFIELD.init(30) ;
-var nom2 = zfld.ZFIELD.init(10) ;
+var nom = zfld.init(30) ;
+var nom2 = zfld.init(10) ;
 var xx : [] const u8 = undefined;
 
         nom.setZfld("早上好 test 🔥");
@@ -550,8 +550,8 @@ pause("-------------------------------");
 zfld.deinitZfld();
 
 
-var testa = zfld.ZFIELD.init(10) ;
-var testb = zfld.ZFIELD.init(10) ;
+var testa = zfld.init(10) ;
+var testb = zfld.init(10) ;
 xx= "coucou";
 
     testa.setZfld("coucou");

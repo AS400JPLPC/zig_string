@@ -154,4 +154,5 @@ Progress:</br>
 - 2025-01-30 18:53 ->  Control, test and lock, security, compliance, a few hours or days... test the principle.</br>
 I'm not satisfied, I'd like to have a "job-logs"' a bit like the system log,</br>
 I'm thinking of a follow-up done with SQLite with a mini-server ... for optimum traceability.</br>
+- 2025-03-07 04:55 -> zig 0.14.0
 
