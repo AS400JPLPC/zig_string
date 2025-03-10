@@ -67,15 +67,15 @@ do
 	f_cls
 	f_dsplyPos  1  24 $faGras$fcJaune 'Project: '$faGras$fcCyan$PROJECT
 
-	f_dsplyPos  3  24 $faGras$fcJaune '------------compile cpp-----------------'
+	#f_dsplyPos  3  24 $faGras$fcJaune '------------compile cpp-----------------'
 
-	f_dsplyPos  4  20 $faGras$fcRouge ' 1.'; f_dsplyPos  5  24 $faGras$fcGreen 'P???'
+	#f_dsplyPos  4  20 $faGras$fcRouge ' 1.'; f_dsplyPos  5  24 $faGras$fcGreen 'P???'
 
 	f_dsplyPos  6  24 $faGras$fcJaune '------------compile Zig-----------------'
 
 	f_dsplyPos  8  20 $faGras$fcRouge' 10'; f_dsplyPos  8  24 $faGras$fcGreen 'Testzfld'
-	f_dsplyPos 10  20 $faGras$fcRouge' 12'; f_dsplyPos 10  24 $faGras$fcGreen 'Testmem'
-
+	f_dsplyPos 10  20 $faGras$fcRouge' 11'; f_dsplyPos 10  24 $faGras$fcGreen 'Testmem'
+	f_dsplyPos 12  20 $faGras$fcRouge' 12'; f_dsplyPos 12  24 $faGras$fcGreen 'Test'
 	f_dsplyPos 16  24 $faGras$fcJaune '----------------------------------------'
 
 	f_dsplyPos 17  20 $faGras$fcRouge'33.'; f_dsplyPos 17  24 $faGras$fcGreen 'Debug codelldb'
@@ -116,9 +116,15 @@ do
 			/home/soleil/.Terminal/dispatch.sh $envZIG $LIBPROJECT   "Testzfld"
 		;;
 #Testmem"
-		12)
+		11)
 			/home/soleil/.Terminal/dispatch.sh $envZIG $LIBPROJECT   "Testmem"
 		;;
+#Test"
+		12)
+			/home/soleil/.Terminal/dispatch.sh $envZIG $LIBPROJECT   "Test"
+		;;
+
+
 #debug
 		33)
 			/home/soleil/.Terminal/debugZig.sh $PROJECT
