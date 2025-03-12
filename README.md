@@ -159,5 +159,7 @@ I'm not satisfied, I'd like to have a "job-logs"' a bit like the system log,<br/
 I'm thinking of a follow-up done with SQLite with a mini-server ... for optimum traceability.<br/>
 - 2025-03-07 04:55 -> zig 0.14.0<br/>  
 - 2025-03-10 17:25 -> Resuming diagnostics with the better-understood 0.14.0 @src deciphering @panic<br/>
-- 
 
+</BR>
+→ 2025-03-12 06:40   unicode.Decode deprecated change Utf8View <BR/>
+</BR>
