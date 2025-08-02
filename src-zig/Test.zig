@@ -7,8 +7,28 @@
 const std = @import("std");
 const zfld = @import("zfield").ZFIELD;
 
-const stdout = std.io.getStdOut().writer();
-const stdin = std.io.getStdIn().reader();
+//============================================================================================
+var stdin = std.fs.File.stdin();
+var stdout = std.fs.File.stdout().writerStreaming(&.{});
+
+
+inline fn Print( comptime format: []const u8, args: anytype) void {
+    stdout.interface.print(format, args) catch  {} ;
+}
+inline fn WriteAll( args: anytype) void {
+    stdout.interface.writeAll(args) catch {} ;
+}
+
+fn Pause(msg : [] const u8 ) void{
+
+    Print("\nPause  {s}\r\n",.{msg});
+    var buf: [16]u8 = undefined;
+    var c  : usize = 0;
+    while (c == 0) {
+        c = stdin.read(&buf) catch unreachable;
+    }
+}
+//============================================================================================
 
 pub const contact = struct {
   name      : zfld ,
@@ -47,12 +67,12 @@ pub const contact = struct {
 };
     
 pub fn main() !void {
-stdout.writeAll("\x1b[2J") catch {};
-stdout.writeAll("\x1b[3J") catch {};
+WriteAll("\x1b[2J");
+WriteAll("\x1b[3J");
 
 var friend  = contact.initRecord();
 
-    pause("start");
+    Pause("start");
 
     friend.name.setZfld("AS400JPLPC");
     friend.prenom.setZfld("Jean-Pierre") ;
@@ -60,23 +80,23 @@ var friend  = contact.initRecord();
     friend.rue2.clear();
     friend.ville.setZfld("Narbonne");
     friend.pays.setZfld("France");
-    pause("setp-1   INIT value"); 
+    Pause("setp-1   INIT value"); 
 
     var xx = friend.name.string();
-    pause(xx);
+    Pause(xx);
     xx = friend.prenom.string();
-    pause(xx);
+    Pause(xx);
     xx = friend.rue1.string();
-    pause(xx);
+    Pause(xx);
     xx = friend.rue2.string();
-    pause(xx);
+    Pause(xx);
     xx = friend.ville.string();
-    pause(xx);
+    Pause(xx);
     xx = friend.pays.string();
-    pause(xx);
+    Pause(xx);
     
 
-    pause("step-3  deinitRecord"); 
+    Pause("step-3  deinitRecord"); 
     friend.deinitRecord();
     // test error
     //friend.prenom.setZfld("Jean-Pierre") ;
@@ -84,15 +104,5 @@ var friend  = contact.initRecord();
     
     zfld.deinitZfld();
  
-    pause("stop");
-}
-
-
-
-
-fn pause(text : [] const u8) void {
-    std.debug.print("{s}\n",.{text});
-   	var buf : [3]u8  =	[_]u8{0} ** 3;
-	_= stdin.readUntilDelimiterOrEof(buf[0..], '\n') catch unreachable;
-
+    Pause("stop");
 }

@@ -7,8 +7,29 @@
 const std = @import("std");
 const zfld = @import("zfield").ZFIELD;
 
-const stdout = std.io.getStdOut().writer();
-const stdin = std.io.getStdIn().reader();
+//============================================================================================
+var stdin = std.fs.File.stdin();
+var stdout = std.fs.File.stdout().writerStreaming(&.{});
+
+
+inline fn Print( comptime format: []const u8, args: anytype) void {
+    stdout.interface.print(format, args) catch  {} ;
+}
+inline fn WriteAll( args: anytype) void {
+    stdout.interface.writeAll(args) catch {} ;
+}
+
+fn Pause(msg : [] const u8 ) void{
+
+    Print("\nPause  {s}\r\n",.{msg});
+    var buf: [16]u8 = undefined;
+    var c  : usize = 0;
+    while (c == 0) {
+        c = stdin.read(&buf) catch unreachable;
+    }
+}
+//============================================================================================
+
 
 pub const contact = struct {
   name      : zfld ,
@@ -47,70 +68,70 @@ pub const contact = struct {
 };
     
 pub fn main() !void {
-stdout.writeAll("\x1b[2J") catch {};
-stdout.writeAll("\x1b[3J") catch {};
+WriteAll("\x1b[2J");
+WriteAll("\x1b[3J");
 
 var work:zfld = zfld.init(30);
 var friend  = contact.initRecord();
 
-    pause("start");
+    Pause("start");
 
     friend.name.setZfld("AS400JPLPC");
     friend.prenom.setZfld("Jean-Pierre") ;
     friend.rue1.setZfld(" 01 rue du sud-ouest") ;
     friend.ville.setZfld("Narbonne");
     friend.pays.setZfld("France");
-    pause("setp-1   INIT value"); 
+    Pause("setp-1   INIT value"); 
 
     var xx = friend.name.string();
-    pause(xx);
+    Pause(xx);
     xx = friend.prenom.string();
-    pause(xx);
+    Pause(xx);
     xx = friend.rue1.string();
-    pause(xx);
+    Pause(xx);
     xx = friend.ville.string();
-    pause(xx);
+    Pause(xx);
     xx = friend.pays.string();
-    pause(xx);
+    Pause(xx);
     
-    pause("step-2");
+    Pause("step-2");
 
     friend.name.uppercase();
     xx = friend.name.string();
-    pause(xx);
+    Pause(xx);
 
     friend.name.debugContext();
 
     friend.name.clear();
     friend.name.debugContext();
-    pause("step-X");
+    Pause("step-X");
     friend.name.setZfld("AS400JPLPC");
 
-    std.debug.print("{} cmpeql\n",.{friend.name.cmpeqlStr("test")});
+    Print("{} cmpeql\n",.{friend.name.cmpeqlStr("test")});
     
-    std.debug.print("{} cmpxx\n",.{friend.name.cmpxxStr("test")});
+    Print("{} cmpxx\n",.{friend.name.cmpxxStr("test")});
    
     work.substr(friend.prenom,1,4) ;
-    std.debug.print("{s}  substr:{s} \n",.{work.string(), friend.prenom.string()});
+    Print("{s}  substr:{s} \n",.{work.string(), friend.prenom.string()});
 
     friend.ville.concatStr(" 11100");
 
-    std.debug.print("{s} ville\n",.{friend.ville.string() });
+    Print("{s} ville\n",.{friend.ville.string() });
     friend.ville.debugContext();
       
 
     friend.prenom.debugContext();
      _=friend.prenom.replace("Jean",friend.name.string());
     friend.prenom.debugContext();
-    std.debug.print("{s}  prenom \n",.{friend.prenom.string()});
+    Print("{s}  prenom \n",.{friend.prenom.string()});
     //the string normalize function always
     xx = friend.prenom.string();
-    pause(xx);
+    Pause(xx);
     friend.prenom.setZfld("Jean-Pierre") ;
 
 
 
-    pause("step-3  deinitRecord"); 
+    Pause("step-3  deinitRecord"); 
     friend.deinitRecord();
     // test error
     //friend.prenom.setZfld("Jean-Pierre") ;
@@ -118,15 +139,6 @@ var friend  = contact.initRecord();
     
     zfld.deinitZfld();
  
-    pause("stop");
+    Pause("stop");
 }
 
-
-
-
-fn pause(text : [] const u8) void {
-    std.debug.print("{s}\n",.{text});
-   	var buf : [3]u8  =	[_]u8{0} ** 3;
-	_= stdin.readUntilDelimiterOrEof(buf[0..], '\n') catch unreachable;
-
-}

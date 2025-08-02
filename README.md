@@ -1,3 +1,5 @@
+**attention I use the night version 0.15.dev incompatible with 0.14.1**
+
 # zig_string
 UTF-8 String Library
 
@@ -162,4 +164,6 @@ I'm thinking of a follow-up done with SQLite with a mini-server ... for optimum 
 
 </BR>
 → 2025-03-12 06:40   unicode.Decode deprecated change Utf8View <BR/>
+/BR>
+→ 2025-08-03 00:12   update version 0.15.dev  <BR/>
 </BR>
